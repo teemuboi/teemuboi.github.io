@@ -3,6 +3,7 @@
     <head>
         <title>Demo 1</title>
         <meta charset ="UTF-8">
+        <link rel="stylesheet" type="text/css" href="./css/demo1.css">
     </head>
     <body>
         <h1>Isoin otsikko</h1>
@@ -28,7 +29,7 @@
 
         <h2>Linkkejä</h2>
         <h3>Ulkoiset sivut</h3>
-        <p>käytä koko url:ää</p>
+        <p id="tärkein">  käytä koko url:ää</p>
         <p>Linkki alkaa tagilla a (anchor), href (reference) kertoo, mihin linkki vie. Tagien väliin tulee se teksti, minkä lukija näkee. Jos haluat avata sivun toiselle välilehdelle, lisää target-attribuutti ja anna sen arvoksi _blank</p>
         <ul>
             <li><a href="http://www.leeniemi.net" target ="_blank">Leenan sivustolle</a></li>
@@ -41,7 +42,7 @@
         <p>Jos sivu on rinnakkaisessa kansiossa, polkuun tulee alkuun viittaus ylöspäin, esim. a href ="../sivukansio/sivu3.html"</p>
 
         <h3>Kuvat</h3>
-        <p>Kuva lisätään tagilla img. Pakollinen attribuutti on alt (alternative), johon kirjoitetaan vaihtoehto, jos kuva ei toimi. Toinen pakollinen on src (source), jossa kerrotaan mistä kuva löytyy.</p>
+        <p class="kuvateksti">Kuva lisätään tagilla img. Pakollinen attribuutti on alt (alternative), johon kirjoitetaan vaihtoehto, jos kuva ei toimi. Toinen pakollinen on src (source), jossa kerrotaan mistä kuva löytyy.</p>
         <p><img src="./kuvat/otus.jpg" alt="otus"></p>
     </body>
 </html>
