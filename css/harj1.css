@@ -1,0 +1,11 @@
+body {
+    margin-left: 40px;
+    background-image:url("../kuvat/checker.png");
+    background-repeat:repeat;
+    color: black;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+img {
+    
+}
