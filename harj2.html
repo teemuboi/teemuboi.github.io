@@ -3,8 +3,18 @@
 <head>
     <meta charset ="UTF-8">
     <title>Harjoitus 2</title>
+    <link rel = "stylesheet" type = "text/css" href ="./css/harjoitus5.css">
 </head>
 <body>
+    <header>
+        <ul class="nav">
+            <li class="nav"><a href="#hinnasto">Hinnasto</a></li>
+            <li class="nav"><a href="#aukioloajat">Aukioloajat</a></li>
+            <li class="nav"><a href="#varaus">Pöytävarauslomake</a></li>
+            <li class="nav"><a href="#yhteystiedot">Yhteystiedot</a></li>
+            <li class="nav"><a href="#sijainti">Sijainti</a></li>
+        </ul>
+    </header>
     <h1>Ravintola Oula</h1>
     <img src="./kuvat/vihannes.jpg" alt="juusto-vihanneskeitto">
     <img src="./kuvat/kanasalaatti.jpg" alt="kana-fetajustosalaatti">
@@ -47,11 +57,16 @@
         Naudan paahtopaistia, punaviinikastiketta, kermaperunat ja kasviksia<br>
         Suklaamousse</p>
     </ul>
+
+    <section id="hinnasto">
     <h3>Lounaan hinta</h3>
     <ul>
     <li>11 euroa, sisältää ruokajuoman - vesi, kotikalja, maito</li>
     </ul>
-<br>
+    </section>
+
+<section id="aukioloajat">
+    <br>
     <h2>Aukioloajat</h2>
     <table>
         <tr>
@@ -89,6 +104,37 @@
             <td><i>à la carte -lista</i></td>
         </tr>
     </table>
+</section>
+
+    <section id="varaus">
+    <a name="yhteys"><h3>Pöytävarauslomake</h3></a>
+    <form method ="post">
+    
+        Nimi<br>
+        <input type = "text" name = "nimi" required placeholder="John Smith"><br>
+
+        Sähköposti<br>
+        <input type ="email"  name ="email" required placeholder="example@email.com"><br>
+
+        Puhelinnumero<br>
+        <input type ="tel"  name ="tel" required placeholder="123-456-789"><br>
+
+        Päiväys<br>
+        <input type ="date" name ="pvm"><br>
+
+        Kellon aika<br>
+        <input type ="time" name ="aika"><br>
+
+        Erikoistoivomukset<br>
+        <textarea rows="5" cols ="20"></textarea>
+        <br>
+
+        <input type ="reset" value ="Tyhjennä"><br>
+        <input type ="submit" value ="Lähetä">
+    </form>
+    </section>
+
+    <section id="yhteystiedot">
 <br>
     <h4>Yhteystiedot</h4>
     <address>
@@ -100,5 +146,10 @@
     Fax (016) 555 4756<br>
     E-Mail: ravintola.oula@oulanet.fi</p>
     </address>
+    </section>
+    
+    <section id="sijainti">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1903.9884127193418!2d23.755825716210854!3d61.49654144243399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468ed8ae811d2891%3A0x6d190551fb145c03!2sHallituskatu%2012%2C%2033200%20Tampere!5e0!3m2!1sen!2sfi!4v1601964105548!5m2!1sen!2sfi" width="400" height="250" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
 </body>
 </html>
