@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+}
+
+div.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: [left] auto auto 5rem[right];
+    grid-template-rows: 5rem 5rem auto 5rem;
+    grid-template-areas: 
+    "head head head"
+    "nav nav nav"
+    "article canvas aside"
+    "foot foot foot";
+}
+
+header {
+    background: rgb(0,0,0,0.3);
+    grid-area: head;
+}
+nav {
+    background: rgb(0,0,0,0.2);
+    grid-area: nav;
+}
+article {
+    background: rgb(0,0,0,0.1);
+    grid-area: article;
+}
+canvas {
+    background: rgb(0,0,0,0.1);
+    grid-area: canvas;
+}
+aside {
+    background: rgb(0,0,0,0.1);
+    grid-area: aside;
+}
+footer {
+    background: rgb(0,0,0,0.3);
+    grid-area: foot;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+/*@media screen and (max-width: 50rem) {
+    .leftpanel {
+        grid-column-end: left;
+        display: none;
+    }
+    .rightpanel {
+        grid-column-start: right;
+        display: none;
+    }
+    .main {
+        grid-column-start: left;
+        grid-column-end: right;
+    }
+}*/
