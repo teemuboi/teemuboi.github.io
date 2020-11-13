@@ -21,31 +21,39 @@ div.container {
     "nav nav nav"
     "article canvas aside"
     "foot foot foot";
+    text-align: center;
 }
 
 header {
-    background: rgb(0,0,0,0.3);
+    background: #333f50;
     grid-area: head;
+    color: #ffffff;
+    padding-top: auto;
 }
 nav {
-    background: rgb(0,0,0,0.2);
+    background: #9dc3e6;
     grid-area: nav;
 }
 article {
-    background: rgb(0,0,0,0.1);
+    background: #ffffff;
     grid-area: article;
+    border-style: solid;
+    border-color: #43739d;
+    border-width: 1px;
 }
-canvas {
-    background: rgb(0,0,0,0.1);
+.canvas {
+    background: #ffffff;
     grid-area: canvas;
     height:auto;
+    width: auto;
+    padding-left: 10px;
 }
 aside {
-    background: rgb(0,0,0,0.1);
+    background: #deebf7;
     grid-area: aside;
 }
 footer {
-    background: rgb(0,0,0,0.3);
+    background: #5b9bd5;
     grid-area: foot;
 }
 
@@ -54,16 +62,16 @@ footer {
     flex-direction: row;
     padding: 10px;
 }
-/*@media screen and (max-width: 50rem) {
-    .leftpanel {
+/*@media all and (max-width: 50rem) {
+    .content {
         grid-column-end: left;
         display: none;
     }
-    .rightpanel {
+    main {
         grid-column-start: right;
         display: none;
     }
-    .main {
+    .content {
         grid-column-start: left;
         grid-column-end: right;
     }
