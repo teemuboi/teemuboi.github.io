@@ -1,0 +1,8 @@
+header {
+    background: #3A405A;
+    grid-area: head;
+    color: #ffffff;
+    height: 100px;
+    width: auto;
+    padding: auto;
+}
