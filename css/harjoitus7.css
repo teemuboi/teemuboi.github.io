@@ -42,6 +42,13 @@
     width: 100%;
     height: 46px;
 }
+
+.downbar {
+  background-color: #3A405A;
+  width: 100%;
+  height: 100px;
+}
+
 * {
     box-sizing: border-box;
   }
